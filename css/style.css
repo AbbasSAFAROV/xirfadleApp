@@ -1,9 +1,18 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+    box-sizing: border-box; 
+}
+
+a {
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 body {
@@ -11,17 +20,35 @@ body {
     font-size: 1rem;
 }
 
+.section-padding{
+    padding: 0.6rem 4rem;
+}
+
 .container {
     width: 100%;
     height: 100vh;
 }
 
-.navbar {
+nav {
     width: 100%;
-    height: 80px;
+    height: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+   
+}
+
+.logo {
+    width: 120px;
+    height: 50px;
+
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ 
 }
 
 .services {
@@ -29,28 +56,74 @@ body {
     gap: 20px;
 }
 
-.navbarRight {
+.services li a {
+    color: #022022;
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.services li a i {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+.services li a:hover {
+    color: #FF5532;
+}
+
+
+
+.navbar-btns {
     display: flex;
     gap: 20px;
 }
 
-.loginXirfadle {
-    padding: 15px;
-    border: 2px solid blue;
-    color: blue;
+
+.login-btn {
+    padding: 14px;
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+    font-family: Montserrat;
+
+}
+
+
+.login a {
+    color: #221402;
+    font-weight: 500;
+    letter-spacing: 0.045rem;
+}
+
+
+.xirfadle-login {
+    border: 1.5px solid #0664FF;
     border-radius: 10px;
     font-weight: bold;
 }
+.xirfadle-login a{
+    color: #0664FF;
+}
+.xirfadle-login:hover a
+ {
+    color: #fff;
 
-.logo {
-    width: 150px;
-    height: 70px;
 }
 
-.logo img {
-    width: 100%;
-    height: 100%;
-}
+
+
+
+
+
+
+
+
+
+
 
 .hero {
     width: 100%;
